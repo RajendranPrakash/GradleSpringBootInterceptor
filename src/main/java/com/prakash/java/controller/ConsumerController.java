@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-@RequestMapping(value="/products")
-public class ProductController {
+@RequestMapping(value="/consumers")
+public class ConsumerController {
 
 	@RequestMapping(method = RequestMethod.GET)
-	private void getAllProducts() {
-		System.out.println("In controller class - getAllProducts method");
+	private void getAllConsumers() {
+		System.out.println("In Consumer controller class - getAllConsumers method");
 	}
 }

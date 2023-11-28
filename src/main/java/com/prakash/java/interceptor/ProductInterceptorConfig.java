@@ -16,6 +16,6 @@ public class ProductInterceptorConfig implements WebMvcConfigurer {
 	ProductInterceptor productInterceptor;
 
 	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(productInterceptor);
+		registry.addInterceptor(productInterceptor).addPathPatterns("/products");
 	}
 }
